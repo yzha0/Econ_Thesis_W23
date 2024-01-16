@@ -1,0 +1,41 @@
+## 1. Research Question
+
+This paper is focusing on how to use machine learning and specifically natural language processing (NLP) method to extract and measure/quantify various areas of uncertainty from original text data source and then assess their effects on real economy indicators.
+
+## 2. Motivation
+
+Uncertainty plays a crucial role in influencing investment decisions, consumer spending, and labor market outcomes, with potential cross-border spillover effects. Despite its significance, measuring uncertainty accurately is challenging. This study is motivated by the need to develop a more detailed understanding of uncertainty by leveraging machine learning tools, specifically NLP. I find this research is compelling because the research aims to provide insights into how different types of uncertainty impact the economy, distinguishing between economic/business uncertainty and political/governmental uncertainty.
+
+
+## 3. Contribution related 
+
+They develop a NLP model based on previous papers that employed ML algorithms--combining trained 
+
+
+
+
+## 4. Data
+
+### Source
+
+The paper used text data of Federal Reserve Biege Books published between 1970 and 2018. 
+
+
+### Pre-processing
+
+The data was pre-processed heavily by using a text-mining engine from Amenity Analytics. The readable text was first tokenized and classified as events of interests by built-in event and sentiment classifiers. Following event generation, they use customized rule for more accurately extracting of "uncertainty" events by considering context of sentences.
+
+
+## 5. Approach 
+
+After grouping and defining the main index of measuring uncertainty, the authors first use Principal Component Analysis to group 13 general areas of uncertainties into two chunks: Business & Economics (B&E) and Politics & Government (P&G) uncertainty. Then, they use vector-autoregressive (VAR) model to explore the relationship between uncertainty and economy performance.
+
+
+## 6. Results
+
+The results show that economic response to shocks in B&E uncertainty is more statistically significant, persistent and stronger compared to P&G uncertainty.
+
+
+
+## 7. Extensions
+
