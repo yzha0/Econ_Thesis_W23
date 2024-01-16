@@ -1,3 +1,21 @@
+---
+title: "Previous Thesis Report on Saltzman-ML-Uncertainty-2018"
+author: "Yuhao Zhao"
+date: "2024-01-16"
+output: 
+    html_document:
+        theme: journal
+    pdf_document:
+        latex_engine: xelatex
+knit: (function(inputFile, encoding) {
+ rmarkdown::render(inputFile, encoding = encoding, 
+ output_format = 'all') 
+ })
+keep_md: false
+---
+
+
+
 ## 1. Research Question
 
 This paper is focusing on how to use machine learning and specifically natural language processing (NLP) method to extract and measure/quantify various areas of uncertainty from original text data source and then assess their effects on real economy indicators.
@@ -9,8 +27,7 @@ Uncertainty plays a crucial role in influencing investment decisions, consumer s
 
 ## 3. Contribution related 
 
-They develop a NLP model based on previous papers that employed ML algorithms--combining trained 
-
+This paper contributes to the existing body of literature on uncertainty measurements. It clarify that general uncertainty is not a good indicators of economic performances but we should use subsetted or more focused definition of uncertainty measures. And it addresses the advantages of using ML-based methods of extracting,  quantifying and differentiating the groups of uncertainty by building upon previous paper that use NLP algorithms on topic modeling.
 
 
 
@@ -30,6 +47,9 @@ The data was pre-processed heavily by using a text-mining engine from Amenity An
 
 After grouping and defining the main index of measuring uncertainty, the authors first use Principal Component Analysis to group 13 general areas of uncertainties into two chunks: Business & Economics (B&E) and Politics & Government (P&G) uncertainty. Then, they use vector-autoregressive (VAR) model to explore the relationship between uncertainty and economy performance.
 
+The intuition behind their approach is to see how/whether B&E uncertainty have different effects on real economy performance measures (Unemployment rate, GDP, FFR, S&P 500 index) across years compared to P&G uncertainty. And 
+
+The major assumptions here are: 1) we agree with the definition of uncertainty count the author used at beginning 2) we assumed the two group of uncertainty are independent of each other.
 
 ## 6. Results
 
@@ -39,3 +59,4 @@ The results show that economic response to shocks in B&E uncertainty is more sta
 
 ## 7. Extensions
 
+The next step of the research can be to manipulate the algorithms in classifying "uncertainty" since there could be possible improvement in extracting features or groups of the measures. 
