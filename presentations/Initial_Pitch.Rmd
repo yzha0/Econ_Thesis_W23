@@ -1,0 +1,79 @@
+---
+title: "Initial Pitch"
+author: "Eric Zhao"
+date: "`r Sys.Date()`"
+output: 
+  beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "beaver"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Background
+
+- social networks matters
+
+- employment layoffs matters
+
+- There has been many studies on layoff's effect on people' family and social lives
+
+- I am more interested in how aggregated measures of social capitals (the strength of an individual’s social
+network and community) imply the layoff situations across regions
+
+
+## Research Question
+
+In this study, I want to explore the relationship between people's social capital measurements and layoff rate by county in United States. How much variation of layoff rates across counties be explained by the social capital measurements differences? (I assume the higher level of economic connectedness and social network clustering will results in low amount of layoffs and shorter period of unemployment time)
+
+
+This work can shed light on understanding how to mitigate and prevent layoff when implementing policy interventions that are relevant to changes in people's socioeconomic networks.
+
+## Major literature
+
+-   Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital I: measurement and associations with economic mobility. Nature 608, 108–121 (2022). <https://doi.org/10.1038/s41586-022-04996-4>
+
+
+-   Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital II: determinants of economic connectedness. Nature 608, 122--134 (2022). <https://doi.org/10.1038/s41586-022-04997-3>
+
+    - These two papers using quantified three measures of social capitals to study their associations with economic mobility and The social disconnection by class is due in equal part to segregation by income across social settings and friending bias within settings
+  
+- Wu, L. (2011). Social Network Effects on Performance and Layoffs. Essays on Social Networks and Information Worker Productivity A, 13.
+
+    -  This paper finds that social networking/communication is more correlated with reduced layoff risks than information diversity
+
+## Potential Data
+
+-  Social Capital Atlas (<https://data.humdata.org/dataset/social-capital-atlas>)
+    -   [Codebook](https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/fbe5b0b9-e81c-41c7-a9f2-3ebf8212cf64/data_release_readme_31_07_2022_nomatrix.pdf?AWSAccessKeyId=AKIAXYC32WNA4K56KLON&Signature=RDqXKer9UcR4iaEoOrqU4etlGxs%3D&Expires=1705960670)
+    -  Three major measures of social capitals in datasets:
+    
+            -  Economic Connectedness:The degree of interaction 
+            between low- and high-income people 
+            
+            -  Cohesiveness:The degree to which social networks 
+            are fragmented into cliques 
+            
+            -  Civic Engagement:Rates of volunteering and 
+            participation in community organizations
+    
+-  WARN Database (<https://layoffdata.com/data/>)
+    -  The WARN Database standardizes WARN layoff notices across the country into searchable datasets. Currently, data exists for counties in 47 states (including DC), representing nearly 60,000 notices and more than 6.7 million impacted workers.
+    
+- Finding datasets with unemployment durations by county...
+
+## Work cited
+
+-   Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital I: measurement and associations with economic mobility. Nature 608, 108–121 (2022). <https://doi.org/10.1038/s41586-022-04996-4>
+
+
+-   Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital II: determinants of economic connectedness. Nature 608, 122--134 (2022). <https://doi.org/10.1038/s41586-022-04997-3>
+
+
+- Wu, L. (2011). Social Network Effects on Performance and Layoffs. Essays on Social Networks and Information Worker Productivity A, 13.
+
+- Hellerstein, Judith K. and Kutzbach, Mark J. and Neumark, David, Labor Market Networks and Recovery from Mass Layoffs Before, During, and after the Great Recession (June 1, 2015). US Census Bureau Center for Economic Studies Paper No. CES-WP-15-14, Available at SSRN: https://ssrn.com/abstract=2616877 or http://dx.doi.org/10.2139/ssrn.2616877
+    
+
