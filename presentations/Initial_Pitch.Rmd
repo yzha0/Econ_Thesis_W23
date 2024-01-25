@@ -14,9 +14,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Background
 
-- social networks matters
+- social network matters
 
-- employment layoffs matters
+- employment layoff matters
 
 - There has been many studies on layoff's effect on people' family and social lives
 
