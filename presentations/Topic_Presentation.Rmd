@@ -1,0 +1,106 @@
+---
+title: "Topic Proposal Presentation"
+author: "Eric Zhao"
+date: "`r Sys.Date()`"
+output: 
+  beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "beaver"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(tinytex.verbose = TRUE)
+
+```
+
+## Basic Motivation
+
+-  How does social capitals play roles when you in unemployed, financially hard time?
+
+-  Social capital can be sources of informal insurance--cash transfers
+
+-  The gap between total unemployed population and insured unemployed population indicates significant amount of unclaimed benefits
+
+-  From cost side, Presence of unclaimed benefits suggests there exist nontrivial costs to participating in the system--administrative costs, stigma cost...
+
+## Basic Motivation(cont.)
+-  From benefit side, what if...unclaimed benefits are gained through social networks?
+
+-  Regional social capitals contribute to the unclaimed benefits through informal aid on social networks?
+
+-  Informal insurance (or different form of risk sharing) is well-spread in developing regions, particularly in rural areas due to lacks of formal insurance institutions.
+
+-  I am interested in whether social networks still play roles in risk-sharing among US communities?
+
+
+
+
+## Related Literature
+
+-   Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital I: measurement and associations with economic mobility. Nature 608, 108--121 (2022). <https://doi.org/10.1038/s41586-022-04996-4>
+
+-   Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital II: determinants of economic connectedness. Nature 608, 122--134 (2022). <https://doi.org/10.1038/s41586-022-04997-3>
+
+-   Hellerstein, Judith K. and Kutzbach, Mark J. and Neumark, David, Labor Market Networks and Recovery from Mass Layoffs Before, During, and after the Great Recession (June 1, 2015). US Census Bureau Center for Economic Studies Paper No. CES-WP-15-14, Available at SSRN: <https://ssrn.com/abstract=2616877> or <http://dx.doi.org/10.2139/ssrn.2616877>
+
+-   Social capital, friendship networks, and youth unemployment.Social Science Research, Volume 61, 2017, Pages 234-250,
+<https://doi.org/10.1016/j.ssresearch.2016.06.017>.
+
+-   Freitag, M., & Kirchner, A. (2011). Social Capital and Unemployment: A Macro-Quantitative Analysis of the European Regions. Political Studies, 59(2), 389-410. https://doi.org/10.1111/j.1467-9248.2010.00876.x
+
+
+
+## Data
+
+-   Social capital measures by county 
+   
+   Indicators of social capitals:
+
+    -   Economic Connectedness:The degree of interaction 
+            between low- and high-income people 
+            
+    -  Cohesiveness:The degree to which social networks 
+            are fragmented into cliques 
+            
+    -  Civic Engagement:Rates of volunteering and 
+            participation in community organizations
+
+-   Initial Claims measures the number of people filing unemployment insurance claims during the past week and reflects emerging unemployment..
+
+-   Continued Claims measures the number of people receiving unemployment insurance benefits during a given week.
+
+-   Weekly/Monthly UI claim data by county(still collecting)
+
+-   Total unemployment data by county
+
+## Methodology 
+
+ -  Data Cleaning/Merging 
+ 
+ -  Pre-processing of UI claim data of selected states
+ 
+    -   Insured Unemployment Rate is the number of (continued claims) people receiving unemployment insurance as a percentage of the cover employment/labor force. 
+
+    -   Take-up/recipiency rate: $\frac{N_{insured unemployed}}{N_{total unemployment}}$ 
+    
+    - There are actually different variations of take-up rates measurements depending on specific measures of the extent that unemployed workers claim or receive benefits.
+    
+## Methodology(cont.)
+- Panel Data/Fixed effect regression for county level data:
+    Set Take-up rate as dependent variable and measures of social capitals as predictors:
+    
+    $Y_{takeUp}=\alpha_i+\beta_1 X_{Connect_{it}}+\beta_2+u_{it}$
+    
+    where $\alpha_i$ is the sum of unobserved time-invariant heterogenities and constant term.
+    
+
+## Potential Results
+
+- higher level of economic connectedness reduced the take-up rate (risk-sharing for ineligble workers)
+
+- The degree of clustering may reduced the take-up rate? (cliques promotes informal help)
+
+- higher level of civic engagement may increase the take-up rate (people tend to look for public resources)
+
+
