@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.25)  6 FEB 2024 03:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.1.25)  6 FEB 2024 03:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,33 +1001,31 @@ Overfull \vbox (69.33327pt too high) detected at line 169
 
 (./Topic_Presentation.vrb
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-1.
+5.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
-Overfull \vbox (55.12491pt too high) detected at line 205
- []
+)) [5
 
-[5
+] [6
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 229.
+(Font)              <10> on input line 241.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 229.
+(Font)              <7> on input line 241.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 229.
+(Font)              <5> on input line 241.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 229.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 241.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 229.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 241.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 229.
-[6
-
-] [7
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 241.
+[7
 
 ] [8
+
+] [9
 
 ]
 \tf@nav=\write5
@@ -1041,13 +1039,13 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 
 (./Topic_Presentation.aux) ) 
 Here is how much of TeX's memory you used:
- 24546 strings out of 478268
- 480561 string characters out of 5846347
+ 24553 strings out of 478268
+ 480627 string characters out of 5846347
  762170 words of memory out of 5000000
- 42103 multiletter control sequences out of 15000+600000
- 538001 words of font info for 123 fonts, out of 8000000 for 9000
+ 42105 multiletter control sequences out of 15000+600000
+ 538102 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,122p,1015b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,122p,1015b,606s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips
 /lm/lm-mathit.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.
 enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/loca
@@ -1057,10 +1055,10 @@ l/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/
 s/type1/public/lm/lmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/pub
 lic/lm/lmsso10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lm
 sso8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Topic_Presentation.pdf (8 pages, 146467 bytes).
+Output written on Topic_Presentation.pdf (9 pages, 147720 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
  41051 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -53,7 +53,8 @@ options(tinytex.verbose = TRUE)
 
 ## Data
 
--   Social capital measures by county 
+-   Social capital measures by county (available) based off Facebook users aged between 25
+and 44 who reside in the United States were active on the Facebook platform at least once in the prior 30 days, have at least 100 U.S.-based Facebook friends, and have a non-missing residential ZIP code as of May 28, 2022.
    
    Indicators of social capitals:
 
@@ -66,11 +67,11 @@ options(tinytex.verbose = TRUE)
     -  Civic Engagement:Rates of volunteering and 
             participation in community organizations
 
--   Initial Claims measures the number of people filing unemployment insurance claims during the past week and reflects emerging unemployment..
+## Data(cont.)
+-   Weekly/Monthly UI claim data by county(still collecting from state webpages)
+    -   Initial Claims measures the number of people filing unemployment insurance claims during the past week and reflects emerging unemployment..
 
--   Continued Claims measures the number of people receiving unemployment insurance benefits during a given week.
-
--   Weekly/Monthly UI claim data by county(still collecting)
+    -   Continued Claims measures the number of people receiving unemployment insurance benefits during a given week.
 
 -   Total unemployment data by county
 
@@ -78,7 +79,7 @@ options(tinytex.verbose = TRUE)
 
  -  Data Cleaning/Merging 
  
- -  Pre-processing of UI claim data of selected states
+ -  Pre-processing of UI claim data of selected states (idea:)
  
     -   Insured Unemployment Rate is the number of (continued claims) people receiving unemployment insurance as a percentage of the cover employment/labor force. 
 
