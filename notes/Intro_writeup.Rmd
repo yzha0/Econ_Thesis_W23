@@ -1,0 +1,171 @@
+---
+title: "Introduction Write-up"
+author: "Eric Zhao"
+date: ""
+output: 
+  pdf_document:
+    citation_package: biblatex
+bibliography: "Reference.bib"
+csl: "chicago-author-date-16th-edition.csl"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Motivation
+
+Social capital is defined as the networks of relationship among people who live and work in a particular society. In another term, social capital is the aggregated and abstract term for values embedded in one's social networks. Quantitatively, when we are trying to measure the social capitals, not like physical capital or human capital, we often face problems with quantifying the intangible feature of it: values/weights of links to friends from different social-economic backgrounds, degree of clustering of different sub-communities within the general network, and so on.
+
+Why do we care about the measurements of social capital anyway? At its core, it is about the important resources embedded in social relations. Like other forms of capitals, social capitals often plays essential roles in shaping how people make uses of other forms of capitals/resources through linkages and structures of social networks. In terms of employment situations, it's generally assumed to be true that higher level of social capitals can lead to more efficient uses of information about labor market and reduce the costs on both sides of the market. Furthermore, social capitals can also be treated as a source of informal insurance or risk-sharing mechanism when it comes to massive layoffs and transition period from unemployment to re-employment. And my research focus comes in when we are getting interested in gap between the claimed unemployment insurance and the total unemployment group.In [\@gap_takeup], researchers have found that nearly 30 percent of UI total expenditure are "unclaimed" UI benefits belongs to eligible unemployed workers. From the workers' side, the significant amount of "unclaimed" benefits indicate possible costs from various sources that can not be overlooked--like fixed up-front administrative costs, stigma cost and cost related to eligibility verification. However, shortage of income benefits of unemployed people-both insured and uninsured should be filled up through different channels when people are on the period of seeking re-employment. 
+
+In many studies of local social networks across developing countries, researchers have found significant results of informal insurance system that embedded in people's social networks where insurance institutions are not been developed or much less accessible. Micro-level public finance system are established and evolved from simple cash transfer to risk-sharing premium are diffused across less-developed rural areas\@. Nonetheless, we are more curious about more institutional-developed setting where people have access to public insurances through institutions but still manage or obtain resources through social capital accumulations when costs of the public resources are high.
+
+We think this area of research matters for people interested in labor economics, especially at the intersections of unemployment insurance and social network effect on regional economic performance. It's also will draw interests from people who also interested in public policy and local community engagement in understanding and intervening in institutional insurance policies based on regional social capital differences.
+ 
+
+## Research focus
+
+Here we envision the importance of social capitals in filling the gap for uninsured unemployment population across regions in United States.
+
+### Research Question
+
+My general question here is-**Does aggregation of regional social capital through networks make up for unclaimed unemployment insurance benefits?**
+
+### Hypothesis (under change)
+
+*1.The regions (county) with higher average level of economic connectedness and clique clustering will decrease the unemployment insurance expenditures and even lower the take-up rate of UI benefits*
+
+*The regions (county) with higher average level of public good contributions and civic/voluntary activity engagement will increase the take-up rate of UI benefits and increase the total expenditures*
+
+
+### Value added
+
+The value added here is mainly in two major ways: 
+
+ - The first is bridging unemployment insurance data with recent empirical project on social capitals that measured from national-wide users on large online social networks
+
+
+ - The second is exploring the social network effects on UI insurance program--seldom work particularly focus on this specific track; I will go over some relevant literature in study how social captials related to unemployment risks and other metric performance.
+ 
+
+## Literature Review...
+
+Social networks permeate our social and economic lives. Not only just because of the salience of networks have draw people's eyes in recent decades, the facts that economists, or more broadly speaking the social scientists, cannot igore the social interactions across in trying to understand the human social behaviors. They play a central role in the transmission of information about job opportunities, and are critical to the trade of many goods and services. Social networks are also important in determining how diseases spread, which products we buy, which languages we speak, how we vote, as well as whether or not we decide to become criminals, how much education we obtain, and our likelihood of succeeding professionally. They are also the basis of the provision of informal insurance or risk-sharing mechanism particular in developing countries and regions. Previous work have found evidences like diffusion of micro-finance systems embedded in Indian rural social contact networks....In a 2017 paper \@, researchers have also found the significant roles that social networks play in affecting the youth's unemployment risks through both occupational contact networks and friendship networks. Another paper\@ analyzed at macro-level relationship between regional social capital levels and number of unemployed people in European regions which shows that regional level aggregation of social captials is negatively related to total number of unemployment. The previous work have set the tone for considering unemployment problems and measures of social capitals. The work \@ on causes and reasons of unemployment insurance take-up narrow down the research scope of this work--the unemployment insurance benefits and how does social capitals contribute to the work.
+
+
+
+
+- Networks in the Understanding of Economic Behaviors
+
+- Informal Insurance in Social Networks
+
+- Social capital, friendship networks, and youth unemployment
+
+- Social Capital and Unemployment: A Macro-Quantitative Analysis of the European Regions
+
+- Eligibility, experience rating, and unemployment insurance take-up
+
+- Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital I: measurement and associations with economic mobility. Nature 608, 108--121 (2022). <https://doi.org/10.1038/s41586-022-04996-4>
+
+- Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital II: determinants of economic connectedness. Nature 608, 122--134 (2022). <https://doi.org/10.1038/s41586-022-04997-3>
+
+
+## Contribution
+
+-   Approaching unemployment problem and social network effects from a different perspective: the previous econ literature mostly focusing on the network role in information flow of job-seeking and re-employment or social networks solely as models of informal risk-sharing mechanisms. Seldom work has build connections between efficiency of UI system with contributions of regional social capital/network.
+
+-  Most empirical work focused on experiments onto development countries' social networks but not too many are targeted in regional social networks of United states where network structures can be more intricate and measurements based on that are hard to collect also. This work will build off the county-level measurements from available datasets in tackling problems related to unemployment.
+
+-  The third countribution of this work is on further exploring the valuable data sources that be collected from The Social Capital Atlas project [https://socialcapital.org/] where as its non-technical report said we can learn from the quantified measures of social captials and target interventions to communties where social capitals are lacking. The work will holds the promise of enriching our understanding of the consequences of social capital and developing new approaches to tackling longstanding social challenges especially when it comes to increasing concerns of unemployment risks in post-pandemic era.
+
+
+## Plans
+
+1. A specific outcome variable and specific explanatory variable of interest:
+
+Outcome variable: Average take-up rate of unemployment insurance benefits from 2021-2022 by county level
+
+Formula: $\frac{N_{insured unemployed}}{N_{total unemployment}}$ (where $N_{insured umeployed}==N_{continued claims}$)
+
+Explanatory variable:  
+
+  \begin{itemize}
+  
+     \item Economic connectedness at county level: the mean level of individual EC of low-SES (for example, below-median) members of that community.
+     
+     \item Degree of cohesiveness/clustering at county level: The average fraction of an individual’s friend pairs who are also
+friends with each other.
+
+     \item Civic engagement/volunteering rate at county level: The percentage of online social network users who are members of a group which is predicted to be about ‘volunteering’ or ‘activism’ based on group title and other group characteristics.
+   \end{itemize}
+
+
+2. The expected effect of the explanatory variable of interest and an explanation of that expectation:
+
+  - The higher level of economic connectedness reduced the take-up rate:
+  
+ Explanation: higer level of economic connectedness indicates higher economic mobility across people in low socioeconomic status and also in high socioeconomic status. It would be expected that when people in low socioeconomic status are ineligible to get insured or or unwilling to take the insurance, friendship network can be an alternative source of emergent financing and the dependency can also reduce the willingness of applying further insurance.
+
+  - The degree of clustering may reduced the take-up rate:
+  
+ Explanation: higher level of clustering indicates the higher closeness of a community which each person knows each others' friends and which I think reduce the take-up rate because I expect more stable sub-groups of regional networks reflects less usage of institutional benefits but more interpersonal among small groups.
+ 
+ 
+  - The higher level of civic engagement may increase the take-up rate:
+  
+ Explanation: higher level of civic engagement shows stronger inclinations toward building and sharing resources, I would expect this variable may predict more willingness in getting UI benefits from governmental programs.
+  
+
+3. An identification strategy and a brief explanation for the strategy:
+
+The identification strategy here is the fixed effect model. Because we have uncontrolled and unobserved time-invariant heterogeneities across county units of observations, the omit of the unobserved county characteristics could bias our estimation of social captials effects on UI benefit take-up rates. The specific solution here is to use demean OLS model to cancel out the county-specific heterogeneity by subtracting the average value of that variable for each entity across all time periods from each observation of that variable. This transformation removes the entity-specific effects that do not change over time, isolating the impact of the independent variables on the dependent variable from within-entity changes.
+
+
+## Data...
+
+### Ideal data:
+
+(Describe the ideal dataset for your research question. What variables would you have? What time period would you cover? What is the unit of observation?)
+
+The ideal dataset for my research question will be the well-defined explantory variables on social capitals. The time period will cover 2021-2022/05 (may subject to change). The unit of observation is US County region.
+
+
+### Data Description:
+
+(You should provide the source(s) of the data you are using and the period it covers. Describe whether you have a panel, cross-sectional or time series; what the unit -f analysis is (individual, state, county, province, nation, etc.); and how many observations you have.)
+
+The social capital statistics come from the large-scale data project The Social Capital Atlas <https://socialcapital.org/> where the data are publicly available and ready for everyone to download at:<https://data.humdata.org/dataset/social-capital-atlas>.  The dataset we are using is in the cross-section data form where first columns is each US county and other columns are specific statistics calculated or collected using privacy-protected Facebook data except population variables. The primary Sample they use to construct these statistics consists of Facebook users aged between 25 and 44 who reside in the United States, were active on the Facebook platform at least once in the prior 30 days, have at least 100 U.S.-based Facebook friends, and have a non-missing residential ZIP code as of May 28, 2022. 
+
+The other data source of # of Continued claimed of UI benefits/# of beneficiaries will come from state level website where weekly/monthly continued claim data and total unemployment data by county are available. I still haven't decided on the specific group of states to use or it finally comes to I collect the data from all 50 states (less possible).
+
+Example web links: 
+
+ - NY <https://dol.ny.gov/unemployment-insurance-data>
+ 
+ - MA <https://lmi.dua.eol.mass.gov/lmi/ClaimsData#>
+
+
+### Limitations:
+
+(Discuss any limitations of the data such as missing variables, missing observations, small number of observations, etc. Report other obvious shortcomings (i.e. no income data; no men interviewed, only people attending school interviewed, etc.). It is useful to think about what the ideal dataset would be for the hypothesis you want to test and compare your data to it.)
+
+The limitations of my dataset is I may not able to access all desired states' continued claim data. 
+
+
+\newpage
+
+## Outline of paper
+
+- Introduction
+- Literature Review
+- Data
+- Methodology
+- Results
+- Discussion
+- Bibliography
+- Appendix (if needed)
+
+## Reference
+(my biblatex usage here have some errors/bugs; it didn't recognize my .bib file under the same directory)
+\printbibliography
