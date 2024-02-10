@@ -16,27 +16,39 @@ options(tinytex.verbose = TRUE)
 
 ## Basic Motivation
 
--  How does social capitals play roles when you in unemployed, financially hard time?
+-  How does social capital play roles when you in unemployed, financially hard time?
 
 -  Social capital can be sources of informal insurance--cash transfers
 
 -  The gap between total unemployed population and insured unemployed population indicates significant amount of unclaimed benefits
+
+_KGC: You need to define unclaimed benefits at some point, i.e. in institutional background._
 
 -  From cost side, Presence of unclaimed benefits suggests there exist nontrivial costs to participating in the system--administrative costs, stigma cost...
 
 ## Basic Motivation(cont.)
 -  From benefit side, what if...unclaimed benefits are gained through social networks?
 
--  Regional social capitals contribute to the unclaimed benefits through informal aid on social networks?
+_KGC: are you suggesting that people gain access to others' benefits because they share them through social networks or just that they do not access them?_
+
+-  Regional social capital contribute to the unclaimed benefits through informal aid on social networks?
+
+_KGC: I think this is restating the same point twice -- in two bullet poitns right?_
 
 -  Informal insurance (or different form of risk sharing) is well-spread in developing regions, particularly in rural areas due to lacks of formal insurance institutions.
 
--  I am interested in whether social networks still play roles in risk-sharing among US communities?
+-  I am interested in whether social networks still play roles in risk-sharing among US communities
 
 
 
 
 ## Related Literature
+
+_KGC: When bringing up literature try writing a bullet point on what the lit says, then just a quick cite._
+
+_KGC: for example:_
+
+- _Chetty et al. (2022) use Facebook data to measure social capital find it is associated with economic mobility (Chetty 2018)_
 
 -   Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital I: measurement and associations with economic mobility. Nature 608, 108--121 (2022). <https://doi.org/10.1038/s41586-022-04996-4>
 
@@ -49,7 +61,11 @@ options(tinytex.verbose = TRUE)
 
 -   Freitag, M., & Kirchner, A. (2011). Social Capital and Unemployment: A Macro-Quantitative Analysis of the European Regions. Political Studies, 59(2), 389-410. https://doi.org/10.1111/j.1467-9248.2010.00876.x
 
+_KGC: You may want to get a cite on measuring UI take up: https://onlinelibrary.wiley.com/doi/full/10.3982/QE940#:~:text=The%20take%2Dup%20rate%20is%20calculated%20as%20the%20total%20number,unemployed%20eligible%20to%20collect%20UI._
 
+_Also: https://www.sciencedirect.com/science/article/pii/S0014292118301855_
+
+_KGC: You want to make sure to cleanly measure take up to have a shot at saying something here -- as we know, you're missing tons of the bigger picture here. For example, you don't see transfers of money._
 
 ## Data
 
@@ -67,6 +83,8 @@ and 44 who reside in the United States were active on the Facebook platform at l
     -  Civic Engagement:Rates of volunteering and 
             participation in community organizations
 
+_KGC: In your write-up, it may be worth giving intuitive examples of these._
+
 ## Data(cont.)
 -   Weekly/Monthly UI claim data by county(still collecting from state webpages)
     -   Initial Claims measures the number of people filing unemployment insurance claims during the past week and reflects emerging unemployment..
@@ -76,6 +94,8 @@ and 44 who reside in the United States were active on the Facebook platform at l
 -   Total unemployment data by county
 
 ## Methodology 
+
+_KGC: @yzha0 As a note, let me know if you want to add a simulation model based on economic connectedness and UI. This data cleaning and regression may yield some interesting results, but you may not be able to get a ton from these results. Certainly it will not be causal -- though it could still be interesting. You could motivate a simulation model with your empirical descriptive results and potentially calibrate a simulation to fit the data._
 
  -  Data Cleaning/Merging 
  
