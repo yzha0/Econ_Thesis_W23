@@ -5,7 +5,7 @@ date: ""
 output: 
   pdf_document:
     citation_package: biblatex
-bibliography: "Reference.bib"
+bibliography: "Reference.bib" #KGC: there is no references.bib file in this folder, so this does not work.
 csl: "chicago-author-date-16th-edition.csl"
 ---
 
@@ -13,33 +13,39 @@ csl: "chicago-author-date-16th-edition.csl"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+_KGC: Took me a minute to find this! I expected it to be in the writing folder!_
+
 ## Motivation
 
-Social capital is defined as the networks of relationship among people who live and work in a particular society. In another term, social capital is the aggregated and abstract term for values embedded in one's social networks. Quantitatively, when we are trying to measure the social capitals, not like physical capital or human capital, we often face problems with quantifying the intangible feature of it: values/weights of links to friends from different social-economic backgrounds, degree of clustering of different sub-communities within the general network, and so on.
+_KGC: This hook is fairly dry. I do not need you to immediately define social capital. Instead introduce me to why relationships/social networks have value in a way that is accessible. (Also "social capital" is plural, no need for the s.)_
 
-Why do we care about the measurements of social capital anyway? At its core, it is about the important resources embedded in social relations. Like other forms of capitals, social capitals often plays essential roles in shaping how people make uses of other forms of capitals/resources through linkages and structures of social networks. In terms of employment situations, it's generally assumed to be true that higher level of social capitals can lead to more efficient uses of information about labor market and reduce the costs on both sides of the market. Furthermore, social capitals can also be treated as a source of informal insurance or risk-sharing mechanism when it comes to massive layoffs and transition period from unemployment to re-employment. And my research focus comes in when we are getting interested in gap between the claimed unemployment insurance and the total unemployment group.In [\@gap_takeup], researchers have found that nearly 30 percent of UI total expenditure are "unclaimed" UI benefits belongs to eligible unemployed workers. From the workers' side, the significant amount of "unclaimed" benefits indicate possible costs from various sources that can not be overlooked--like fixed up-front administrative costs, stigma cost and cost related to eligibility verification. However, shortage of income benefits of unemployed people-both insured and uninsured should be filled up through different channels when people are on the period of seeking re-employment. 
+_KGC: For example, "During periods of economic turmoil, people often rely on their friends and family, or their social network to provide them with informal financial and in-kind support. They may receive this informal support alongside formal social insurance programs like unemployment insurance (UI) compensation. Alternatively, informal support may act as a substitute for social insurance programs, which are often cumbersome to navigate and replace a fraction of lost earnings (cite). Such substitution could explain why TK percent of eligible unemployed workers in the United States did not enroll in unemployment insurance (UI) benefits in YEAR (cite)."_
 
-In many studies of local social networks across developing countries, researchers have found significant results of informal insurance system that embedded in people's social networks where insurance institutions are not been developed or much less accessible. Micro-level public finance system are established and evolved from simple cash transfer to risk-sharing premium are diffused across less-developed rural areas\@. Nonetheless, we are more curious about more institutional-developed setting where people have access to public insurances through institutions but still manage or obtain resources through social capital accumulations when costs of the public resources are high.
+_KGC: You can and should do better than that intro, but I want you to note how it starts with an accessible hook that anyone can follow and builds toward the specific idea of the paper. It stays grounded in what you'll discuss, but does not shy away from what makes this work valuable. At the same time, I think I get a little too specific and your second paragraph below does a great job and should come first if you just smooth it out._
 
-We think this area of research matters for people interested in labor economics, especially at the intersections of unemployment insurance and social network effect on regional economic performance. It's also will draw interests from people who also interested in public policy and local community engagement in understanding and intervening in institutional insurance policies based on regional social capital differences.
- 
+_KGC: Then you can discuss how not all social networks are created equal. Some provide more informal support, some provide less and this is measured as social capital. So in this paper, you will explore how social capital, as measured by the Social Capital Atlas, can help to explain the variation in UI take-up rates across US counties._
 
-## Research focus
+_KGC: Why not move this section further down in the paper to where you discuss background/data?_
 
-Here we envision the importance of social capitals in filling the gap for uninsured unemployment population across regions in United States.
+Social capital is defined as the network of relationships among people who live and work in a particular society. In another words, social capital is the aggregated and abstract term for values embedded in one's social networks. Quantitatively, when we are trying to measure social capital, not like physical capital or human capital, we often face problems with quantifying the intangible feature of it: values/weights of links to friends from different social-economic backgrounds, degree of clustering of different sub-communities within the general network, and so on.
 
-### Research Question
+_KGC: I think this serves slightly better as a hook than what I wrote if you could introduce social capital in laymen's terms. It starts broad about why we care about social capital. Still there are more words here than you need and you can help the reader by linking ideas together more neatly. I suggest you shorten the paragraph below and give it a nice accessible lead-in about what social capital is in laymen's terms. Really, I think this paragraph is close to a perfect intro if you just shorten it and take out some information you won't speak to in this paper._
 
-My general question here is-**Does aggregation of regional social capital through networks make up for unclaimed unemployment insurance benefits?**
+Why do we care about the measurements of social capital? At its core, it is about the important resources embedded in social relations. Like other forms of capital, social capitals often plays essential roles in shaping how people make uses of other forms of capitals/resources through linkages and structures of social networks. In terms of employment situations, it's generally assumed to be true that higher level of social capitals can lead to more efficient uses of information about labor market and reduce the costs on both sides of the market. Furthermore, social capitals can also be treated as a source of informal insurance or risk-sharing mechanism when it comes to massive layoffs and transition period from unemployment to re-employment. And my research focus comes in when we are getting interested in gap between the claimed unemployment insurance and the total unemployment group. _KGC: fix your cites_ In [@gap_takeup], researchers have found that nearly 30 percent of UI total expenditure are "unclaimed" UI benefits belongs to eligible unemployed workers. From the workers' side, the significant amount of "unclaimed" benefits indicate possible costs from various sources that can not be overlooked--like fixed up-front administrative costs, stigma cost and cost related to eligibility verification. However, shortage of income benefits of unemployed people-both insured and uninsured should be filled up through different channels when people are on the period of seeking re-employment. 
 
-### Hypothesis (under change)
+_KGC: If this becomes your intro paragraph, spend the next two paragraphs on establishing your question. Follow Keith Head's formula: https://blogs.ubc.ca/khead/research/research-advice/formula. Identify and define social capital and its different components and how they relate to take up. Stick your question at the end of the second paragraph/beginning of the 3rd. In the 3rd paragraph, further summarize how you will answer the question._
 
-*1.The regions (county) with higher average level of economic connectedness and clique clustering will decrease the unemployment insurance expenditures and even lower the take-up rate of UI benefits*
+_KGC: No need to mention that studies do research below. Just say something like, "In developing countries where formal insurance institutions are inaccessible and incomplete, social networks provide robust informal insurance in small tight-knit communities (cite)."_
 
-*The regions (county) with higher average level of public good contributions and civic/voluntary activity engagement will increase the take-up rate of UI benefits and increase the total expenditures*
+In many studies of local social networks across developing countries, researchers have found significant results of informal insurance system that embedded in people's social networks where insurance institutions are not been developed or much less accessible. Micro-level public finance system are established and evolved from simple cash transfer to risk-sharing premium are diffused across less-developed rural areas (cite?). Nonetheless, we are more curious about more institutional-developed setting where people have access to public insurances through institutions but still manage or obtain resources through social capital accumulations when costs of the public resources are high.
 
+_KGC: Who is we? No need for the royal "we." These are the contributions your paper will make, so state is as such. "This paper makes contributions to the fields of labor economics, public economics, and economic geography (possibly)."_
+
+We think this area of research matters for people interested in labor economics, especially at the intersections of unemployment insurance and social network effect on regional economic performance. It will also draw interests from people who also interested in public policy and local community engagement in understanding and intervening in institutional insurance policies based on regional social capital differences.
 
 ### Value added
+
+_KGC: This is good, but should come right after the discussion of antecedents, which you should expand somewhat above so I moved it accordingly._
 
 The value added here is mainly in two major ways: 
 
@@ -48,13 +54,41 @@ The value added here is mainly in two major ways:
 
  - The second is exploring the social network effects on UI insurance program--seldom work particularly focus on this specific track; I will go over some relevant literature in study how social captials related to unemployment risks and other metric performance.
  
+ 
+
+## Research focus
+
+Here we envision the importance of social capitals in filling the gap for uninsured unemployed population across regions in United States.
+
+### Research Question
+
+My general question here is-**Does aggregation of regional social capital through networks make up for unclaimed unemployment insurance benefits?**
+
+_KGC: This is a bit of a mouthful. Why not: "Are increases in social capital associated with reduced take-up of formal unemployment insurance benefits?" Again, not perfect, but until you have a causal mechanism, you have to speak about associations. Also, the question should be stated within three paragraphs._
+
+### Hypothesis (under change)
+
+*1.The regions (county) with higher average level of economic connectedness and clique clustering will decrease the unemployment insurance expenditures and even lower the take-up rate of UI benefits*
+
+*The regions (county) with higher average level of public good contributions and civic/voluntary activity engagement will increase the take-up rate of UI benefits and increase the total expenditures*
+
 
 ## Literature Review...
 
-Social networks permeate our social and economic lives. Not only just because of the salience of networks have draw people's eyes in recent decades, the facts that economists, or more broadly speaking the social scientists, cannot igore the social interactions across in trying to understand the human social behaviors. They play a central role in the transmission of information about job opportunities, and are critical to the trade of many goods and services. Social networks are also important in determining how diseases spread, which products we buy, which languages we speak, how we vote, as well as whether or not we decide to become criminals, how much education we obtain, and our likelihood of succeeding professionally. They are also the basis of the provision of informal insurance or risk-sharing mechanism particular in developing countries and regions. Previous work have found evidences like diffusion of micro-finance systems embedded in Indian rural social contact networks....In a 2017 paper \@, researchers have also found the significant roles that social networks play in affecting the youth's unemployment risks through both occupational contact networks and friendship networks. Another paper\@ analyzed at macro-level relationship between regional social capital levels and number of unemployed people in European regions which shows that regional level aggregation of social captials is negatively related to total number of unemployment. The previous work have set the tone for considering unemployment problems and measures of social capitals. The work \@ on causes and reasons of unemployment insurance take-up narrow down the research scope of this work--the unemployment insurance benefits and how does social capitals contribute to the work.
 
+_KGC: You need to dig into the literature more. The developing world has much to offer here. I hate to do this, but my job market paper cites tons of people who look at the relationship between informal insurance and take-up of social insurance. This is an exciting area!_ 
 
+_Examples: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2009528, https://academic.oup.com/wber/article/29/suppl_1/S126/1689179 and check who they cite too!_
 
+_KGC: This feels close to an introduction hook as well. It is maybe a little too broad-based for what you do, but this closer to why social capital is important to study. The issue is that the first 4 sentences of this paragraph are way too broad to find themselves here in the paper, so move these ideas up to the first paragraph to hook in the reader, but also cut some stuff that gets a little too broad and out of scope of this paper._
+
+Social networks permeate our social and economic lives. Not only just because of the salience of networks have draw people's eyes in recent decades, the facts that economists, or more broadly speaking the social scientists, cannot igore the social interactions across in trying to understand the human social behaviors. They (_KGC: Who are they?_) play a central role in the transmission of information about job opportunities, and are critical to the trade of many goods and services. (_KGC: I'd cut this sentence._) Social networks are also important in determining how diseases spread, which products we buy, which languages we speak, how we vote, as well as whether or not we decide to become criminals, how much education we obtain, and our likelihood of succeeding professionally. (_KGC: At this point in the paper, we should only be talking about informal insurance from social networks -- any other benefit should only be in discussion of how to interpret results._) They are also the basis of the provision of informal insurance or risk-sharing mechanism particular in developing countries and regions. _KGC: Why are you discussing the spread of micro-finance, what is the relevant here? Is this about take-up of a formal institution like micro-finance, then maybe it makes sense._ Previous work has found evidences like diffusion of micro-finance systems embedded in Indian rural social contact networks... _KGC: no ellipses in final version_ Last name (2017) \@ _KGC: fix cites_, researchers have also found the significant roles that social networks play in affecting the youth's unemployment risks through both occupational contact networks and friendship networks. Another paper\@ _KGC: fix cites_ analyzed at macro-level relationship between regional social capital levels and number of unemployed people in European regions which shows that regional level aggregation of social captials is negatively related to total number of unemployment. The previous work have set the tone for considering unemployment problems and measures of social capitals. The work \@ on causes and reasons of unemployment insurance take-up narrow down the research scope of this work--the unemployment insurance benefits and how does social capitals contribute to the work.
+
+_KGC: When writing a literature review, "Previous work does this" is very passive phrasing. Just get to the meat of what the work showed: "In rural India, micro-finance systems spread through social contact networks, increasing take-up of a formal institution (cite)._
+
+_KGC: Also, group literature by method or finding/subtopic. Tell me a story of the literature. What can I learn from each sub-part of the literature?_
+
+_KGC: Expand on each of these much more._
 
 - Networks in the Understanding of Economic Behaviors
 
@@ -72,6 +106,10 @@ Social networks permeate our social and economic lives. Not only just because of
 
 
 ## Contribution
+
+_KGC: These are all nice, but why are these separate from the value-added? Check how earlier parts of your writing link to newer parts that you are adding. I also encourage you to summarize each of these in a sentence, so you can have one paragraph that ticks off your three contributions following the discussion of antecedent literature._
+
+_KGC: These do seem like strong contributions. I'd check for other examples of this type of work in the literature to shape how you discuss these contributions._
 
 -   Approaching unemployment problem and social network effects from a different perspective: the previous econ literature mostly focusing on the network role in information flow of job-seeking and re-employment or social networks solely as models of informal risk-sharing mechanisms. Seldom work has build connections between efficiency of UI system with contributions of regional social capital/network.
 
@@ -107,7 +145,7 @@ friends with each other.
   
  Explanation: higer level of economic connectedness indicates higher economic mobility across people in low socioeconomic status and also in high socioeconomic status. It would be expected that when people in low socioeconomic status are ineligible to get insured or or unwilling to take the insurance, friendship network can be an alternative source of emergent financing and the dependency can also reduce the willingness of applying further insurance.
 
-  - The degree of clustering may reduced the take-up rate:
+  - The degree of clustering may reduce the take-up rate:
   
  Explanation: higher level of clustering indicates the higher closeness of a community which each person knows each others' friends and which I think reduce the take-up rate because I expect more stable sub-groups of regional networks reflects less usage of institutional benefits but more interpersonal among small groups.
  
@@ -128,12 +166,16 @@ The identification strategy here is the fixed effect model. Because we have unco
 
 (Describe the ideal dataset for your research question. What variables would you have? What time period would you cover? What is the unit of observation?)
 
+_KGC: Hmm. Think more creatively. What is ideal data really? Ideally to learn about how social capital affects UI take-up, you'd know about each individual's social network, their income levels, their employment status, their wealth, and whether or not they applied for UI. This is the ideal, but it is actually impossible to access. Instead, you told me the ideal dataset is the dataset you have._
+
 The ideal dataset for my research question will be the well-defined explantory variables on social capitals. The time period will cover 2021-2022/05 (may subject to change). The unit of observation is US County region.
 
 
 ### Data Description:
 
-(You should provide the source(s) of the data you are using and the period it covers. Describe whether you have a panel, cross-sectional or time series; what the unit -f analysis is (individual, state, county, province, nation, etc.); and how many observations you have.)
+_KGC: This is fairly good. This is a jump on what I expect from you on the data report._
+
+(You should provide the source(s) of the data you are using and the period it covers. Describe whether you have a panel, cross-sectional or time series; what the unit of analysis is (individual, state, county, province, nation, etc.); and how many observations you have.)
 
 The social capital statistics come from the large-scale data project The Social Capital Atlas <https://socialcapital.org/> where the data are publicly available and ready for everyone to download at:<https://data.humdata.org/dataset/social-capital-atlas>.  The dataset we are using is in the cross-section data form where first columns is each US county and other columns are specific statistics calculated or collected using privacy-protected Facebook data except population variables. The primary Sample they use to construct these statistics consists of Facebook users aged between 25 and 44 who reside in the United States, were active on the Facebook platform at least once in the prior 30 days, have at least 100 U.S.-based Facebook friends, and have a non-missing residential ZIP code as of May 28, 2022. 
 
@@ -152,6 +194,7 @@ Example web links:
 
 The limitations of my dataset is I may not able to access all desired states' continued claim data. 
 
+_KGC: Also the lack of individual data is a limitation. You have to make up for that by making some strong assumptions about regional data, which are ultimately summary statistics at a reasonably granular level._
 
 \newpage
 
