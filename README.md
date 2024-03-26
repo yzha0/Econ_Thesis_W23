@@ -1,4 +1,4 @@
-# Undergraduate Thesis: "Title here"
+# Undergraduate Thesis: "Unemployment Insurance recipiency in NY: From a social network perspective"
 
 Here you put a brief description of the project.
 
