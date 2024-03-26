@@ -1,7 +1,7 @@
 ---
 title: "Introduction Write-up"
 author: "Eric Zhao"
-date: ""
+date: "`r Sys.Date()`"
 output: 
   pdf_document:
     citation_package: biblatex
@@ -159,8 +159,7 @@ The limitations of my dataset is I may not able to access all desired states' co
 
 - Introduction
 - Literature Review
-- Data
-- Methodology
+- Methodology/Data
 - Results
 - Discussion
 - Bibliography

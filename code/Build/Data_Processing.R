@@ -25,15 +25,15 @@ social_capital_county <- read_csv("data/social_capital_county.csv")
 View(social_capital_county)
 
 #Unemployment data
-Unemployment_ma_2021<-read_csv("data/MA_2021_Unemployed.csv", 
+Unemployment_ma_2021<-read_csv("data/Raw_data/MA_2021_Unemployed.csv", 
                                skip = 6)
-Unemployment_ma_2022<-read_csv("data/MA_2022_Unemployed.csv", skip = 6)
+Unemployment_ma_2022<-read_csv("data/Raw_data/MA_2022_Unemployed.csv", skip = 6)
 Unemployment_ny<-read_csv("data/NY_21_22_Unemployed.csv")
   
 #UI Claim data
-claim_data_ny <- read_excel("data/claim_data_ny.xlsx", 
+claim_data_ny <- read_excel("data/Raw_data/claim_data_ny.xlsx", 
                               sheet = "Monthly Bens & Amts by County")
-claim_data_ma <-read_excel("data/ClaimsDataCounty_MA.xlsx", 
+claim_data_ma <-read_excel("data/Raw_data/ClaimsDataCounty_MA.xlsx", 
                                                    sheet = "ContinuedClaims")
 View(claim_data_ma)
 View(claim_data_ny)

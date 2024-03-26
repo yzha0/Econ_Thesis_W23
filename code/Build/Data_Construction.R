@@ -45,9 +45,28 @@ merged_unemployed_claim_ma$recip_rate<-merged_unemployed_claim_ma$Claims/merged_
 merged_unmeployed_claim_ny$recip_rate<-merged_unmeployed_claim_ny$Claims/merged_unmeployed_claim_ny$Unemployed
 
 #transforming variables
+social_capital_ny<-social_capital_ma_ny[,-1] %>%
+  filter(grepl("New York", county_name))
 
+
+# Extract county names
+social_capital_ny$County <- sub(", New York", "", social_capital_ny$county_name)
+
+# Step 2: Standardize formats (optional step, depending on your data)
+# Convert to lowercase and trim whitespace for consistent matching
+social_capital_ny$County <- tolower(trimws(social_capital_ny$County))
+merged_unmeployed_claim_ny$County <- tolower(trimws(merged_unmeployed_claim_ny$County))
+
+# Step 3: Matching entries
+# Option A: Merge datasets based on the county names
+merged_df <- merge(social_capital_ny, merged_unmeployed_claim_ny, by='County', all=TRUE)
+
+# # Option B: Find matching entries (if you only need to know which rows match)
+# df1$matched <- df1$county_extracted %in% df2$county_name
 
 #saving intermediate and analysis data files
 write_csv(merged_unemployed_claim_ma, "data/Analysis_Data/merged_outcome_ma.csv")
 write_csv(merged_unmeployed_claim_ny, "data/Analysis_Data/merged_outcome_ny.csv")
+write_csv(merged_df, "data/Analysis_Data/merged_outcome_socialcaptial_ny.csv")
+write_csv(social_capital_ny, "data/Analysis_Data/social_captial_ny.csv")
 
