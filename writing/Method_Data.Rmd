@@ -13,7 +13,7 @@ csl: "chicago-author-date-16th-edition.csl"
 knitr::opts_chunk$set(echo = TRUE)
 library(psych)
 library(dplyr)
-merged_unmeployed_claim_ny<-read.csv("data/Analysis_Data/merged_outcome_socialcaptial_ny.csv")
+merged_unmeployed_claim_ny<-read.csv("../data/Analysis_Data/merged_outcome_socialcaptial_ny.csv")
 dep_ind_data<-merged_unmeployed_claim_ny %>% select(County, Year, Month, recip_rate, ec_county, clustering_county, volunteering_rate_county)%>% group_by(Year,Month,County)
 ```
 
@@ -53,7 +53,7 @@ The second one is the county level cohesiveness statistics. It is defined as the
 
 $Clustering_c=\frac{\sum{Clutering_i(g)}}{N_c}$ where $Clustering_i(g)=\sum{\frac{g_{kj}}{d_i(g)(d_i(g)-1)/2}}$
 
-$g_{kj}=1$ denotes the existence of link between individual $k$ and $j$. and $d_i(g)$ is the degree or number of friends that individual $i$ has.
+$g_{kj}=1$ denotes the existence of link between individual $k$ and $j$ who are friends of $i$. and $d_i(g)$ is the degree or number of friends that individual $i$ has.
 
 The third one is average volunteering rate by county level.Volunteering rate is defined as the share of Facebook users in the county who are a member of at least one volunteering or activism group. The researchers of social captial project start with the set of all Facebook Groups in the United States that are predicted to be about volunteering or activism based on their titles and do not have the privacy setting 'secret' enabled. To further improve this classification, they manually review the 50 largest such groups in the United States and the largest such group in each state, and remove the very small number of groups that are clearly mis-classified. Individual-level volunteering is a binary value equal to either zero or one, they also apply noise from the Laplace($0, 1/N_\epsilon$) distribution to protect privacy.
 
@@ -99,9 +99,18 @@ knitr::kable(describe(dep_ind_data)[, c(2:10)],  caption = "Summary Statistics o
 
 #### Limitation
 
-- data 
+First I want to talk about the problem of data availability here. In this work, we only focused on the New York State for studies on relationship between social capitals and take-up rate of unemployment insurance. However, if time permitted, we want to gather more data from other states as well since we have the social capital measures collected across the country. By collecting UI data across states, we will have a better knowledge on the national landscape of this work here.
 
-- 
+
+Second, there are also several limits of data usage here. The first one is the time matching of the social capital data and UI data. The calculation of social capital measures and statistics are based on the Facebook sample data collected as of May 28th, 2022. It is possible that the some statistics undergo changes in the rest of seven month however the measures or statistics we interested are just a single-time collection and the changes on social networks after are omitted. Second, the correlation between $\textit{Volunteer_rate_county}$ and $\textit{ec_county}$ is moderately positive which might cause problem of collinearity. The second one is the challenges on working with network-related data. In the datasets we are interested here, the first and second explanatory variables are directly related to network measures. Especially the second one which measures the average proportion of closed triangles for each individuals.Due to the influences on networks are normally bilateral or simultaneous so that sometime it is extremely hard to set up the direction of the regression analysis. Under our circumstance, we can say that clustering statistics might have this simultaneous feedback loop with our take-up rate of UI benefits.
+
+**Full part of limitation move to discussion**
+
+
+
+
+
+
 
 
 

@@ -49,11 +49,7 @@ The value added here is mainly in two major ways:
  - The second is exploring the social network effects on UI insurance program--seldom work particularly focus on this specific track; I will go over some relevant literature in study how social captials related to unemployment risks and other metric performance.
  
 
-## Literature Review...
-
-Social networks permeate our social and economic lives. Not only just because of the salience of networks have draw people's eyes in recent decades, the facts that economists, or more broadly speaking the social scientists, cannot igore the social interactions across in trying to understand the human social behaviors. They play a central role in the transmission of information about job opportunities, and are critical to the trade of many goods and services. Social networks are also important in determining how diseases spread, which products we buy, which languages we speak, how we vote, as well as whether or not we decide to become criminals, how much education we obtain, and our likelihood of succeeding professionally. They are also the basis of the provision of informal insurance or risk-sharing mechanism particular in developing countries and regions. Previous work have found evidences like diffusion of micro-finance systems embedded in Indian rural social contact networks....In a 2017 paper \@, researchers have also found the significant roles that social networks play in affecting the youth's unemployment risks through both occupational contact networks and friendship networks. Another paper\@ analyzed at macro-level relationship between regional social capital levels and number of unemployed people in European regions which shows that regional level aggregation of social captials is negatively related to total number of unemployment. The previous work have set the tone for considering unemployment problems and measures of social capitals. The work \@ on causes and reasons of unemployment insurance take-up narrow down the research scope of this work--the unemployment insurance benefits and how does social capitals contribute to the work.
-
-
+## Literature Review..
 
 
 - Networks in the Understanding of Economic Behaviors
