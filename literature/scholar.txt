@@ -1,0 +1,10 @@
+@article{rosenzweig1988risk,
+  title={Risk, implicit contracts and the family in rural areas of low-income countries},
+  author={Rosenzweig, Mark R},
+  journal={The Economic Journal},
+  volume={98},
+  number={393},
+  pages={1148--1170},
+  year={1988},
+  publisher={Oxford University Press Oxford, UK}
+}

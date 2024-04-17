@@ -1,9 +1,6 @@
-# Undergraduate Thesis: "Unemployment Insurance Take-up on Social Networks"
+# Undergraduate Thesis: "Unemployment Insurance recipiency in NY: From a social network perspective"
 
-**Abstract**:
-
-
-
+Here you put a brief description of the project.
 
 # Replicating results
 

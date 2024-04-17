@@ -1,0 +1,92 @@
+---
+title: "Research Question Proposal"
+author: "Yuhao Zhao"
+date: "2024-01-16"
+output: 
+    html_document:
+        theme: journal
+    pdf_document:
+        latex_engine: xelatex
+knit: (function(inputFile, encoding) {
+ rmarkdown::render(inputFile, encoding = encoding, 
+ output_format = 'all') 
+ })
+keep_md: false
+---
+
+
+
+## 1. Social capitals and layoffs interplay
+### Research Question
+How does social-economic connectedness, participation in public good provision and social cohesiveness affect the local unemployment situations? 
+
+
+Monthly layoff rates 
+monthly unemployment insurance claims
+
+
+### Related Paper
+
+- Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital I: measurement and associations with economic mobility. Nature 608, 108–121 (2022). <https://doi.org/10.1038/s41586-022-04996-4>
+
+- Chetty, R., Jackson, M.O., Kuchler, T. et al. Social capital II: determinants of economic connectedness. Nature 608, 122--134 (2022). <https://doi.org/10.1038/s41586-022-04997-3>
+
+- Moro, E., Frank, M.R., Pentland, A. et al. Universal resilience patterns in labor markets. Nat Commun 12, 1972 (2021). <https://doi.org/10.1038/s41467-021-22086-3>
+
+ -High job network connectivity(based off similarity of occupations’ skill requirements) implies low unemployment rate 
+
+- Francis Bloch, Garance Genicot, Debraj Ray. Informal insurance in social networks. Journal of EconomicTheory, Volume 143, Issue 1, 2008, Pages 36-58,
+ISSN 0022-0531,
+<https://doi.org/10.1016/j.jet.2008.01.008>
+
+ -High/low economic connectedness lead to stability
+ 
+-esper J. Rözer, Bas Hofstra, Matthew E. Brashears, Beate Volker. Does unemployment lead to isolation? The consequences of unemployment for social networks. Social Networks, Volume 63, 2020,Pages 100-111,
+ISSN 0378-8733,
+<https://doi.org/10.1016/j.socnet.2020.06.002>
+
+ -
+### Data
+
+- layoff rates
+- unemployment insurance claims
+- social capital measures
+
+
+### Approach
+
+
+panel data/matching 
+
+
+### Contribution
+
+
+
+
+
+## 2. How network structures affect the cooperation on voluntary contribution mechanisms(VCM)
+
+### Research Question
+
+Our hypotheses are: 1)social contagion is significant in several
+network structures; 2)The information on neighbors’ payoffs have negative effects on the social
+contagion process.
+
+limited time for running experiment--need fit datasets of public good game onto static network structures
+
+
+### Related Paper
+
+
+### Data
+
+[game_data]<https://github.com/benedekrozemberczki/datasets?tab=readme-ov-file#twitch-gamers>
+[co-author data]<https://github.com/chenyang03/co-authorship-network>
+
+### Approach
+
+### Contribution 
+
+
+

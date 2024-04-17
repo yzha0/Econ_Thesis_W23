@@ -1,0 +1,61 @@
+---
+title: "Method & Data Presentation"
+author: "Eric Zhao"
+date: "`r Sys.Date()`"
+output: 
+  beamer_presentation:
+    theme: "CambridgeUS"
+    colortheme: "beaver"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(tinytex.verbose = TRUE)
+```
+
+
+### fixed-effect regression model
+
+- Base Model:
+
+$Y_{Recip-rate}=\alpha_i+\beta_1 X_{sec_{it}}+\beta_2 X_{clustering_{it}}+\beta_3 X_{vonluteering_{it}}+u_{it}$
+    
+    
+where $\alpha_i$ is the sum of constant term and unobserved time-invariant heterogenities across counties : $\alpha_i=\beta_0+\beta Z_i$
+
+- Assumptions:
+  - $u_{it}$ is not correlated with other explanatory variables 
+  - $X_{1t}, X_{2t}, ... X_{nt}, ....u_{1t}, u_{2t}, ...u_{nt}$ are i.i.d. from the distribution
+
+The base model can be expressed as a regression model containing $n-1$ dummy regressors and a constant:
+
+$Y_{it}=\beta_0+\beta_1 X_{sec_{it}}+\beta_2 X_{clustering_{it}}+\beta_3 X_{vonlunteering_{it}}+\gamma_2 D2_i+\gamma_3 D3_i +...+\gamma_n Dn_i+\mu_{it}$
+
+### Data processing
+
+- Panel data Construction:
+ - calculate take-up rate from cleaned and organized claim data
+ - merge dataset from social capital measures (cross-section data) and UI claim related data (time-series) by county
+
+
+### Initial Results
+
+- average recip-rate across NY counties in 2021:
+\includegraphics[width=0.5\textwidth, height=\textheight, keepaspectratio]{~/Desktop/College/Econ_Thesis_W23/Output/mean_recip_NY_2021.png}
+
+### Initial Results 
+- average recip-rate across NY counties in 2022:
+\includegraphics[width=0.5\textwidth, height=\textheight, keepaspectratio]{~/Desktop/College/Econ_Thesis_W23/Output/mean_recip_NY_2022.png}
+
+### Initial Results
+-average sec across NY counties:
+![mean sec in NY counties](~/Desktop/College/Econ_Thesis_W23/Output/mean_sec_NY.png)
+### Initial Results
+
+![First regression summary snapshot](~/Desktop/College/Econ_Thesis_W23/Output/fe_county_ny.png)
+
+
+### Work cited
+
+-  https://www.econometrics-with-r.org/10.3-fixed-effects-regression.html
+
