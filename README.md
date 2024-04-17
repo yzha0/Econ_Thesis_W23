@@ -1,14 +1,18 @@
-# Undergraduate Thesis: "Title here"
+# Undergraduate Thesis: "Unemployment Insurance Take-up on Social Networks"
 
-Here you put a brief description of the project.
+**Abstract**:
+
+
+
 
 # Replicating results
 
-Here explain the steps someone would need to take to replicate your project. 
+In code folder, you can found build and analysis sections where Build section is for constructing the cleaned panel data for our analysis.
+Then you can use code in Analysis folder to reproduce the summary statistics and regression analysis results in this paper. 
 
 # Relevant files
 
-Here you put a brief explanation of code files.
+In Build section, we have data construction and data processing files that transform the raw data to the cleaned data.
 
 # Data sources
 
