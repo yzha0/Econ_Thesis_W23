@@ -1,5 +1,6 @@
 # Undergraduate Economic Thesis: "Unemployment Insurance recipiency in NY: From a social network perspective"
 
+This project explore the possible relationships between regional (County-level) social networks' effect on Unemployment Insurance (UI) take-up situations in NY. We employ time-fixed effect OLS model to study our question. Regardless data limiation and possible network endogenity problem, We found that social capitals that aggregated by online social networks can influence policy-maker's decision on distributing UI expenditure.
 
 # Replicating results
 
