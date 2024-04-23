@@ -1,16 +1,33 @@
-# Undergraduate Thesis: "Unemployment Insurance recipiency in NY: From a social network perspective"
+# Undergraduate Economic Thesis: "Unemployment Insurance recipiency in NY: From a social network perspective"
 
-Here you put a brief description of the project.
+This project explore the possible relationships between regional (County-level) social networks' effect on Unemployment Insurance (UI) take-up situations in NY. We employ time-fixed effect OLS model to study our question. Regardless data limiation and possible network endogenity problem, We found that social capitals that aggregated by online social networks can influence policy-maker's decision on distributing UI expenditure.
 
 # Replicating results
 
-In code folder, you can found build and analysis sections where Build section is for constructing the cleaned panel data for our analysis.
-Then you can use code in Analysis folder to reproduce the summary statistics and regression analysis results in this paper. 
+Use files in [Build](/code/Build) subfolder in code folder to build cleaned/merged dataset from raw data source.
+
+Use files in [Analysis](/code/Analysis) subfolder in code folder to return spatial summary, summary stats, and regression model results.
 
 # Relevant files
 
-In Build section, we have data construction and data processing files that transform the raw data to the cleaned data.
+[Build](/code/Build): 
+
+* Data_Processing.R
+* Data_Construction.R
+
+[Analysis](/code/Analysis):
+
+* Summary_Stats.R
+* Spatial_Analysis.R
+* Fixed_Effect.R
+
+
 
 # Data sources
 
-Any data sources that this project uses? Stick them here. 
+Social Captial Data:
+[Social Capital Atlas Data repository](https://data.humdata.org/dataset/social-capital-atlas)
+
+
+UI Data:
+[LAUS](https://dol.ny.gov/local-area-unemployment-statistics)
